@@ -7,134 +7,7 @@
     <title>ژاکت سرویس - طراحی سایت اختصاصی</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- <link rel="stylesheet" href="./src/output.css"> -->
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap');
-
-        body {
-            font-family: 'Vazirmatn', sans-serif;
-        }
-
-        .header-sticky {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 1000;
-            animation: slideDown 0.3s ease-out;
-        }
-
-        @keyframes slideDown {
-            from {
-                transform: translateY(-100%);
-            }
-
-            to {
-                transform: translateY(0);
-            }
-        }
-
-        .banner-gradient {
-            background: linear-gradient(90deg, #ef4444 0%, #dc2626 100%);
-        }
-
-        .header-white {
-            background: rgba(255, 255, 255, 0.98);
-            backdrop-filter: blur(10px);
-        }
-
-        .btn-primary {
-            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
-            transition: all 0.3s ease;
-        }
-
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 25px rgba(59, 130, 246, 0.3);
-        }
-
-        .btn-outline {
-            border: 2px solid #3b82f6;
-            color: #3b82f6;
-            background: white;
-            transition: all 0.3s ease;
-        }
-
-        .btn-outline:hover {
-            background: #3b82f6;
-            color: white;
-        }
-
-        .btn-orange {
-            background: linear-gradient(135deg, #fb923c 0%, #f97316 100%);
-            transition: all 0.3s ease;
-        }
-
-        .btn-orange:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 25px rgba(251, 146, 60, 0.3);
-        }
-
-        .hero-bg {
-            background: linear-gradient(180deg, #f1f5f9 0%, #e2e8f0 100%);
-        }
-
-        .icon-floating {
-            animation: float 3s ease-in-out infinite;
-        }
-
-        @keyframes float {
-
-            0%,
-            100% {
-                transform: translateY(0px);
-            }
-
-            50% {
-                transform: translateY(-15px);
-            }
-        }
-
-        .icon-floating:nth-child(1) {
-            animation-delay: 0s;
-        }
-
-        .icon-floating:nth-child(2) {
-            animation-delay: 0.5s;
-        }
-
-        .icon-floating:nth-child(3) {
-            animation-delay: 1s;
-        }
-
-        .icon-floating:nth-child(4) {
-            animation-delay: 1.5s;
-        }
-
-        .icon-floating:nth-child(5) {
-            animation-delay: 2s;
-        }
-
-        .icon-floating:nth-child(6) {
-            animation-delay: 2.5s;
-        }
-
-        .mobile-menu {
-            transform: translateX(100%);
-            transition: transform 0.3s ease;
-        }
-
-        .mobile-menu.active {
-            transform: translateX(0);
-        }
-
-        .btn-orange {
-            background: linear-gradient(135deg, #fb923c 0%, #f97316 100%);
-        }
-
-        .btn-orange:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 25px rgba(251, 146, 60, 0.3);
-        }
-    </style>
+    <link rel="stylesheet" href="./src/style.css">
 </head>
 
 <body class="bg-gray-50">
@@ -504,7 +377,7 @@
                 </div>
 
                 <!-- Service Card 4 - طراحی سایت رزومه ای و نمونه کار -->
-                 
+
                 <div
                     class="bg-white rounded-2xl border-2 border-gray-200 hover:border-blue-500 p-6 md:p-8 transition-all duration-300 hover:shadow-xl">
                     <div class="flex justify-center mb-6">
@@ -570,228 +443,719 @@
         </div>
     </section>
     <!-- Pricing Plans Section -->
-<section class="bg-gray-50 py-16 md:py-20">
-    <div class="container mx-auto px-4 sm:px-6 lg:px-20">
-        
-        <!-- Section Header -->
-        <div class="text-center mb-12 md:mb-16">
-            <h2 class="text-2xl md:text-4xl font-black text-gray-900 mb-2">
-                پلن‌های طراحی سایت <span class="text-blue-600">ژاکت سرویس</span>
-            </h2>
+    <section class="bg-gray-50 py-16 md:py-20">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-20">
+
+            <!-- Section Header -->
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-2xl md:text-4xl font-black text-gray-900 mb-2">
+                    پلن‌های طراحی سایت <span class="text-blue-600">ژاکت سرویس</span>
+                </h2>
+            </div>
+
+            <!-- Plans Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+
+                <!-- Plan 1 - طراحی سایت آموزشی -->
+                <div
+                    class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
+                    <div class="p-6 md:p-8">
+                        <!-- Icon -->
+                        <div class="flex justify-center mb-6">
+                            <div
+                                class="bg-gradient-to-br from-orange-400 to-orange-600 w-16 h-16 rounded-2xl flex items-center justify-center shadow-lg">
+                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 14l9-5-9-5-9 5 9 5z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
+                                </svg>
+                            </div>
+                        </div>
+
+                        <!-- Title -->
+                        <h3 class="text-xl md:text-2xl font-bold text-blue-600 text-center mb-4">
+                            طراحی سایت آموزشی
+                        </h3>
+
+                        <!-- Description -->
+                        <p class="text-gray-600 text-xs md:text-sm text-center leading-relaxed mb-6">
+                            با قالب آماده و پیکربندی بخش های پیامکی / درگاه / ورود و ثبت نام / آزمون و گواهی / کلاس
+                            آنلاین و ۵ صفحه اصلی
+                        </p>
+
+                        <!-- Price Box -->
+                        <div class="bg-blue-50 border-2 border-blue-500 rounded-xl p-4 mb-6">
+                            <p class="text-gray-600 text-xs text-center mb-1">هزینه سرویس</p>
+                            <p class="text-2xl md:text-3xl font-black text-blue-600 text-center">۲۲,۰۰۰,۰۰۰ تومان</p>
+                        </div>
+
+                        <!-- Features List -->
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path
+                                        d="M10 2a8 8 0 100 16 8 8 0 000-16zm0 14a6 6 0 110-12 6 6 0 010 12zm1-7H9v4h2V9zm0-2H9V5h2v2z" />
+                                </svg>
+                                <span class="text-gray-700 text-xs md:text-sm">استفاده از قالب آماده با طراحی وانکشزگرا
+                                    و متناسب با آموزش آنلاین</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path
+                                        d="M10 2a8 8 0 100 16 8 8 0 000-16zm0 14a6 6 0 110-12 6 6 0 010 12zm1-7H9v4h2V9zm0-2H9V5h2v2z" />
+                                </svg>
+                                <span class="text-gray-700 text-xs md:text-sm">پیکربندی سامانه پیامک برای اطلاع‌رسانی
+                                    سریع و مؤثر</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path
+                                        d="M10 2a8 8 0 100 16 8 8 0 000-16zm0 14a6 6 0 110-12 6 6 0 010 12zm1-7H9v4h2V9zm0-2H9V5h2v2z" />
+                                </svg>
+                                <span class="text-gray-700 text-xs md:text-sm">راه‌اندازی درگاه پرداخت امن برای پرداخت
+                                    شهریه‌ها</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path
+                                        d="M10 2a8 8 0 100 16 8 8 0 000-16zm0 14a6 6 0 110-12 6 6 0 010 12zm1-7H9v4h2V9zm0-2H9V5h2v2z" />
+                                </svg>
+                                <span class="text-gray-700 text-xs md:text-sm">مدیریت کامل آزمون‌ها، صدور گواهی و
+                                    برگزاری کلاس‌های آنلاین</span>
+                            </li>
+                        </ul>
+
+                        <!-- CTA Button -->
+                        <button
+                            class="w-full bg-gradient-to-r from-orange-400 to-orange-600 text-white font-bold py-3 md:py-4 rounded-xl flex items-center justify-center gap-2 hover:shadow-lg transition-all hover:scale-105">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg>
+                            افزودن به سبد خرید
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Plan 2 - طراحی سایت رزومه ای و نمونه کار (Featured) -->
+                <div
+                    class="bg-white rounded-2xl shadow-2xl border-4 border-blue-500 transition-all duration-300 overflow-hidden relative">
+                    <!-- Popular Badge -->
+                    <div
+                        class="absolute top-4 left-4 bg-gradient-to-r from-red-500 to-pink-500 text-white px-4 py-1 rounded-full text-xs font-bold shadow-lg z-10">
+                        محبوب ترین
+                    </div>
+
+                    <div class="p-6 md:p-8">
+                        <!-- Icon -->
+                        <div class="flex justify-center mb-6">
+                            <div
+                                class="bg-gradient-to-br from-orange-400 to-orange-600 w-16 h-16 rounded-2xl flex items-center justify-center shadow-lg">
+                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                                </svg>
+                            </div>
+                        </div>
+
+                        <!-- Title -->
+                        <h3 class="text-xl md:text-2xl font-bold text-blue-600 text-center mb-4">
+                            طراحی سایت رزومه ای و نمونه کار
+                        </h3>
+
+                        <!-- Description -->
+                        <p class="text-gray-600 text-xs md:text-sm text-center leading-relaxed mb-6">
+                            با قالب آماده و پیکربندی بخش آلبوم تصاویر / نمونه کار و ۳ صفحه اصلی
+                        </p>
+
+                        <!-- Price Box -->
+                        <div class="bg-blue-50 border-2 border-blue-500 rounded-xl p-4 mb-6">
+                            <p class="text-gray-600 text-xs text-center mb-1">هزینه سرویس</p>
+                            <p class="text-2xl md:text-3xl font-black text-blue-600 text-center">۱۶,۰۰۰,۰۰۰ تومان</p>
+                        </div>
+
+                        <!-- Features List -->
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path
+                                        d="M10 2a8 8 0 100 16 8 8 0 000-16zm0 14a6 6 0 110-12 6 6 0 010 12zm1-7H9v4h2V9zm0-2H9V5h2v2z" />
+                                </svg>
+                                <span class="text-gray-700 text-xs md:text-sm">استفاده از قالب آماده با طراحی وانکشزگرا
+                                    و مدرن</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path
+                                        d="M10 2a8 8 0 100 16 8 8 0 000-16zm0 14a6 6 0 110-12 6 6 0 010 12zm1-7H9v4h2V9zm0-2H9V5h2v2z" />
+                                </svg>
+                                <span class="text-gray-700 text-xs md:text-sm">پیکربندی بخش آلبوم تصاویر برای نمایش
+                                    حرفه‌ای</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path
+                                        d="M10 2a8 8 0 100 16 8 8 0 000-16zm0 14a6 6 0 110-12 6 6 0 010 12zm1-7H9v4h2V9zm0-2H9V5h2v2z" />
+                                </svg>
+                                <span class="text-gray-700 text-xs md:text-sm">مدیریت و نمایش نمونه کارها به صورت منظم و
+                                    جذاب</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path
+                                        d="M10 2a8 8 0 100 16 8 8 0 000-16zm0 14a6 6 0 110-12 6 6 0 010 12zm1-7H9v4h2V9zm0-2H9V5h2v2z" />
+                                </svg>
+                                <span class="text-gray-700 text-xs md:text-sm">طراحی و پیاده‌سازی ۳ صفحه اصلی شامل
+                                    نیازهای رزومه و نمونه کار</span>
+                            </li>
+                        </ul>
+
+                        <!-- CTA Button -->
+                        <button
+                            class="w-full bg-gradient-to-r from-orange-400 to-orange-600 text-white font-bold py-3 md:py-4 rounded-xl flex items-center justify-center gap-2 hover:shadow-lg transition-all hover:scale-105">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg>
+                            افزودن به سبد خرید
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Plan 3 - طراحی سایت شرکتی -->
+                <div
+                    class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
+                    <div class="p-6 md:p-8">
+                        <!-- Icon -->
+                        <div class="flex justify-center mb-6">
+                            <div
+                                class="bg-gradient-to-br from-orange-400 to-orange-600 w-16 h-16 rounded-2xl flex items-center justify-center shadow-lg">
+                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                                </svg>
+                            </div>
+                        </div>
+
+                        <!-- Title -->
+                        <h3 class="text-xl md:text-2xl font-bold text-blue-600 text-center mb-4">
+                            طراحی سایت شرکتی
+                        </h3>
+
+                        <!-- Description -->
+                        <p class="text-gray-600 text-xs md:text-sm text-center leading-relaxed mb-6">
+                            با قالب آماده و پیکربندی بخش های دسته بندی / آلبوم تصاویر / نمایندگیها / معرفی خدمات و ۵
+                            صفحه اصلی
+                        </p>
+
+                        <!-- Price Box -->
+                        <div class="bg-blue-50 border-2 border-blue-500 rounded-xl p-4 mb-6">
+                            <p class="text-gray-600 text-xs text-center mb-1">هزینه سرویس</p>
+                            <p class="text-2xl md:text-3xl font-black text-blue-600 text-center">۱۹,۰۰۰,۰۰۰ تومان</p>
+                        </div>
+
+                        <!-- Features List -->
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path
+                                        d="M10 2a8 8 0 100 16 8 8 0 000-16zm0 14a6 6 0 110-12 6 6 0 010 12zm1-7H9v4h2V9zm0-2H9V5h2v2z" />
+                                </svg>
+                                <span class="text-gray-700 text-xs md:text-sm">استفاده از قالب آماده با طراحی حرفه‌ای و
+                                    وانکشزگرا</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path
+                                        d="M10 2a8 8 0 100 16 8 8 0 000-16zm0 14a6 6 0 110-12 6 6 0 010 12zm1-7H9v4h2V9zm0-2H9V5h2v2z" />
+                                </svg>
+                                <span class="text-gray-700 text-xs md:text-sm">پیکربندی بخش دسته‌بندی برای سازماندهی
+                                    بهتر محتوا</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path
+                                        d="M10 2a8 8 0 100 16 8 8 0 000-16zm0 14a6 6 0 110-12 6 6 0 010 12zm1-7H9v4h2V9zm0-2H9V5h2v2z" />
+                                </svg>
+                                <span class="text-gray-700 text-xs md:text-sm">طراحی و مدیریت آلبوم حداب و
+                                    گالریزی</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path
+                                        d="M10 2a8 8 0 100 16 8 8 0 000-16zm0 14a6 6 0 110-12 6 6 0 010 12zm1-7H9v4h2V9zm0-2H9V5h2v2z" />
+                                </svg>
+                                <span class="text-gray-700 text-xs md:text-sm">راه‌اندازی بخش نمایندگی‌ها و معرفی کامل
+                                    خدمات شرکت</span>
+                            </li>
+                        </ul>
+
+                        <!-- CTA Button -->
+                        <button
+                            class="w-full bg-gradient-to-r from-orange-400 to-orange-600 text-white font-bold py-3 md:py-4 rounded-xl flex items-center justify-center gap-2 hover:shadow-lg transition-all hover:scale-105">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg>
+                            افزودن به سبد خرید
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
+    </section>
+    <!-- Custom Website Request Form Section -->
+    <section class="bg-gray-50 py-16 md:py-20">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-20">
 
-        <!-- Plans Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-            
-            <!-- Plan 1 - طراحی سایت آموزشی -->
-            <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
-                <div class="p-6 md:p-8">
-                    <!-- Icon -->
-                    <div class="flex justify-center mb-6">
-                        <div class="bg-gradient-to-br from-orange-400 to-orange-600 w-16 h-16 rounded-2xl flex items-center justify-center shadow-lg">
-                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"/>
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/>
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"/>
-                            </svg>
-                        </div>
-                    </div>
-
-                    <!-- Title -->
-                    <h3 class="text-xl md:text-2xl font-bold text-blue-600 text-center mb-4">
-                        طراحی سایت آموزشی
-                    </h3>
-
-                    <!-- Description -->
-                    <p class="text-gray-600 text-xs md:text-sm text-center leading-relaxed mb-6">
-                        با قالب آماده و پیکربندی بخش های پیامکی / درگاه / ورود و ثبت نام / آزمون و گواهی / کلاس آنلاین و ۵ صفحه اصلی
-                    </p>
-
-                    <!-- Price Box -->
-                    <div class="bg-blue-50 border-2 border-blue-500 rounded-xl p-4 mb-6">
-                        <p class="text-gray-600 text-xs text-center mb-1">هزینه سرویس</p>
-                        <p class="text-2xl md:text-3xl font-black text-blue-600 text-center">۲۲,۰۰۰,۰۰۰ تومان</p>
-                    </div>
-
-                    <!-- Features List -->
-                    <ul class="space-y-3 mb-6">
-                        <li class="flex items-start gap-2">
-                            <svg class="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M10 2a8 8 0 100 16 8 8 0 000-16zm0 14a6 6 0 110-12 6 6 0 010 12zm1-7H9v4h2V9zm0-2H9V5h2v2z"/>
-                            </svg>
-                            <span class="text-gray-700 text-xs md:text-sm">استفاده از قالب آماده با طراحی وانکشزگرا و متناسب با آموزش آنلاین</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <svg class="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M10 2a8 8 0 100 16 8 8 0 000-16zm0 14a6 6 0 110-12 6 6 0 010 12zm1-7H9v4h2V9zm0-2H9V5h2v2z"/>
-                            </svg>
-                            <span class="text-gray-700 text-xs md:text-sm">پیکربندی سامانه پیامک برای اطلاع‌رسانی سریع و مؤثر</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <svg class="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M10 2a8 8 0 100 16 8 8 0 000-16zm0 14a6 6 0 110-12 6 6 0 010 12zm1-7H9v4h2V9zm0-2H9V5h2v2z"/>
-                            </svg>
-                            <span class="text-gray-700 text-xs md:text-sm">راه‌اندازی درگاه پرداخت امن برای پرداخت شهریه‌ها</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <svg class="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M10 2a8 8 0 100 16 8 8 0 000-16zm0 14a6 6 0 110-12 6 6 0 010 12zm1-7H9v4h2V9zm0-2H9V5h2v2z"/>
-                            </svg>
-                            <span class="text-gray-700 text-xs md:text-sm">مدیریت کامل آزمون‌ها، صدور گواهی و برگزاری کلاس‌های آنلاین</span>
-                        </li>
-                    </ul>
-
-                    <!-- CTA Button -->
-                    <button class="w-full bg-gradient-to-r from-orange-400 to-orange-600 text-white font-bold py-3 md:py-4 rounded-xl flex items-center justify-center gap-2 hover:shadow-lg transition-all hover:scale-105">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/>
-                        </svg>
-                        افزودن به سبد خرید
-                    </button>
-                </div>
+            <!-- Section Header -->
+            <div class="text-center mb-12">
+                <h2 class="text-2xl md:text-4xl font-black text-gray-900 mb-4">
+                    ثبت درخواست <span class="text-blue-600">سایت اختصاصی</span>
+                </h2>
+                <p class="text-gray-600 text-sm md:text-base max-w-3xl mx-auto leading-relaxed">
+                    از این طریق می‌توانید درخواست سایت اختصاصی خود را ثبت کنید و پس از بررسی کارشناسان حرفه‌ای ما، با
+                    شما تماس خواهید گرفت.
+                </p>
             </div>
 
-            <!-- Plan 2 - طراحی سایت رزومه ای و نمونه کار (Featured) -->
-            <div class="bg-white rounded-2xl shadow-2xl border-4 border-blue-500 transition-all duration-300 overflow-hidden relative">
-                <!-- Popular Badge -->
-                <div class="absolute top-4 left-4 bg-gradient-to-r from-red-500 to-pink-500 text-white px-4 py-1 rounded-full text-xs font-bold shadow-lg z-10">
-                    محبوب ترین
-                </div>
-                
-                <div class="p-6 md:p-8">
-                    <!-- Icon -->
-                    <div class="flex justify-center mb-6">
-                        <div class="bg-gradient-to-br from-orange-400 to-orange-600 w-16 h-16 rounded-2xl flex items-center justify-center shadow-lg">
-                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
-                            </svg>
+            <!-- Form Container -->
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white rounded-3xl shadow-xl p-6 md:p-10">
+
+                    <form id="customRequestForm" class="space-y-6">
+
+                        <!-- Row 1: Name and Need -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                            <!-- Name Field -->
+                            <div>
+                                <label class="block text-gray-700 font-bold text-sm md:text-base mb-3 text-right">
+                                    سلام، من
+                                </label>
+                                <input type="text" name="name" placeholder="نام و نام خانوادگی"
+                                    class="w-full px-4 py-3 md:py-4 bg-gray-50 border-2 border-gray-200 rounded-xl focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-200 transition text-right text-gray-700"
+                                    required>
+                            </div>
+
+                            <!-- Need Field -->
+                            <div>
+                                <label class="block text-gray-700 font-bold text-sm md:text-base mb-3 text-right">
+                                    هستم و نیاز دارم به
+                                </label>
+                                <input type="text" name="need" placeholder="مثلا یک سایت فروشگاهی یا ادیت کردن وب سایت"
+                                    class="w-full px-4 py-3 md:py-4 bg-gray-50 border-2 border-gray-200 rounded-xl focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-200 transition text-right text-gray-700"
+                                    required>
+                            </div>
+
                         </div>
-                    </div>
 
-                    <!-- Title -->
-                    <h3 class="text-xl md:text-2xl font-bold text-blue-600 text-center mb-4">
-                        طراحی سایت رزومه ای و نمونه کار
-                    </h3>
-
-                    <!-- Description -->
-                    <p class="text-gray-600 text-xs md:text-sm text-center leading-relaxed mb-6">
-                        با قالب آماده و پیکربندی بخش آلبوم تصاویر / نمونه کار و ۳ صفحه اصلی
-                    </p>
-
-                    <!-- Price Box -->
-                    <div class="bg-blue-50 border-2 border-blue-500 rounded-xl p-4 mb-6">
-                        <p class="text-gray-600 text-xs text-center mb-1">هزینه سرویس</p>
-                        <p class="text-2xl md:text-3xl font-black text-blue-600 text-center">۱۶,۰۰۰,۰۰۰ تومان</p>
-                    </div>
-
-                    <!-- Features List -->
-                    <ul class="space-y-3 mb-6">
-                        <li class="flex items-start gap-2">
-                            <svg class="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M10 2a8 8 0 100 16 8 8 0 000-16zm0 14a6 6 0 110-12 6 6 0 010 12zm1-7H9v4h2V9zm0-2H9V5h2v2z"/>
-                            </svg>
-                            <span class="text-gray-700 text-xs md:text-sm">استفاده از قالب آماده با طراحی وانکشزگرا و مدرن</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <svg class="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M10 2a8 8 0 100 16 8 8 0 000-16zm0 14a6 6 0 110-12 6 6 0 010 12zm1-7H9v4h2V9zm0-2H9V5h2v2z"/>
-                            </svg>
-                            <span class="text-gray-700 text-xs md:text-sm">پیکربندی بخش آلبوم تصاویر برای نمایش حرفه‌ای</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <svg class="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M10 2a8 8 0 100 16 8 8 0 000-16zm0 14a6 6 0 110-12 6 6 0 010 12zm1-7H9v4h2V9zm0-2H9V5h2v2z"/>
-                            </svg>
-                            <span class="text-gray-700 text-xs md:text-sm">مدیریت و نمایش نمونه کارها به صورت منظم و جذاب</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <svg class="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M10 2a8 8 0 100 16 8 8 0 000-16zm0 14a6 6 0 110-12 6 6 0 010 12zm1-7H9v4h2V9zm0-2H9V5h2v2z"/>
-                            </svg>
-                            <span class="text-gray-700 text-xs md:text-sm">طراحی و پیاده‌سازی ۳ صفحه اصلی شامل نیازهای رزومه و نمونه کار</span>
-                        </li>
-                    </ul>
-
-                    <!-- CTA Button -->
-                    <button class="w-full bg-gradient-to-r from-orange-400 to-orange-600 text-white font-bold py-3 md:py-4 rounded-xl flex items-center justify-center gap-2 hover:shadow-lg transition-all hover:scale-105">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/>
-                        </svg>
-                        افزودن به سبد خرید
-                    </button>
-                </div>
-            </div>
-
-            <!-- Plan 3 - طراحی سایت شرکتی -->
-            <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
-                <div class="p-6 md:p-8">
-                    <!-- Icon -->
-                    <div class="flex justify-center mb-6">
-                        <div class="bg-gradient-to-br from-orange-400 to-orange-600 w-16 h-16 rounded-2xl flex items-center justify-center shadow-lg">
-                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
-                            </svg>
+                        <!-- Project Description -->
+                        <div>
+                            <label class="block text-gray-700 font-bold text-sm md:text-base mb-3 text-right">
+                                و میخواهم که در این باره راهنماییم کنید. شما میتوانید از طریق
+                            </label>
+                            <textarea name="description" rows="6"
+                                placeholder="شرح پروژه : مثلا وب سایت فروشگاهی با ادیت کردن وب سایت"
+                                class="w-full px-4 py-3 md:py-4 bg-gray-50 border-2 border-gray-200 rounded-xl focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-200 transition text-right text-gray-700 resize-none"
+                                required></textarea>
                         </div>
-                    </div>
 
-                    <!-- Title -->
-                    <h3 class="text-xl md:text-2xl font-bold text-blue-600 text-center mb-4">
-                        طراحی سایت شرکتی
-                    </h3>
+                        <!-- Phone Number -->
+                        <div>
+                            <label class="block text-gray-700 font-bold text-sm md:text-base mb-3 text-right">
+                                شماره همراه من
+                            </label>
+                            <input type="tel" name="phone" placeholder="شماره همراه شما"
+                                class="w-full px-4 py-3 md:py-4 bg-gray-50 border-2 border-gray-200 rounded-xl focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-200 transition text-right text-gray-700"
+                                required>
+                        </div>
 
-                    <!-- Description -->
-                    <p class="text-gray-600 text-xs md:text-sm text-center leading-relaxed mb-6">
-                        با قالب آماده و پیکربندی بخش های دسته بندی / آلبوم تصاویر / نمایندگیها / معرفی خدمات و ۵ صفحه اصلی
-                    </p>
+                        <!-- Info Box -->
+                        <div class="bg-blue-50 border-2 border-dashed border-blue-400 rounded-xl p-4 md:p-6">
+                            <p class="text-gray-700 text-xs md:text-sm text-center leading-relaxed">
+                                با من تماس بگیرید تا درباره یا این پروژه به صورت دقیق تر صحبت کنیم.
+                            </p>
+                        </div>
 
-                    <!-- Price Box -->
-                    <div class="bg-blue-50 border-2 border-blue-500 rounded-xl p-4 mb-6">
-                        <p class="text-gray-600 text-xs text-center mb-1">هزینه سرویس</p>
-                        <p class="text-2xl md:text-3xl font-black text-blue-600 text-center">۱۹,۰۰۰,۰۰۰ تومان</p>
-                    </div>
-
-                    <!-- Features List -->
-                    <ul class="space-y-3 mb-6">
-                        <li class="flex items-start gap-2">
-                            <svg class="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M10 2a8 8 0 100 16 8 8 0 000-16zm0 14a6 6 0 110-12 6 6 0 010 12zm1-7H9v4h2V9zm0-2H9V5h2v2z"/>
+                        <!-- Submit Button -->
+                        <button type="submit"
+                            class="w-full bg-gradient-to-r from-orange-400 to-orange-600 text-white font-bold py-4 md:py-5 rounded-xl flex items-center justify-center gap-3 hover:shadow-xl transition-all hover:scale-105 text-base md:text-lg">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M14 5l7 7m0 0l-7 7m7-7H3" />
                             </svg>
-                            <span class="text-gray-700 text-xs md:text-sm">استفاده از قالب آماده با طراحی حرفه‌ای و وانکشزگرا</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <svg class="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M10 2a8 8 0 100 16 8 8 0 000-16zm0 14a6 6 0 110-12 6 6 0 010 12zm1-7H9v4h2V9zm0-2H9V5h2v2z"/>
-                            </svg>
-                            <span class="text-gray-700 text-xs md:text-sm">پیکربندی بخش دسته‌بندی برای سازماندهی بهتر محتوا</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <svg class="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M10 2a8 8 0 100 16 8 8 0 000-16zm0 14a6 6 0 110-12 6 6 0 010 12zm1-7H9v4h2V9zm0-2H9V5h2v2z"/>
-                            </svg>
-                            <span class="text-gray-700 text-xs md:text-sm">طراحی و مدیریت آلبوم حداب و گالریزی</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <svg class="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M10 2a8 8 0 100 16 8 8 0 000-16zm0 14a6 6 0 110-12 6 6 0 010 12zm1-7H9v4h2V9zm0-2H9V5h2v2z"/>
-                            </svg>
-                            <span class="text-gray-700 text-xs md:text-sm">راه‌اندازی بخش نمایندگی‌ها و معرفی کامل خدمات شرکت</span>
-                        </li>
-                    </ul>
+                            ارسال درخواست
+                        </button>
 
-                    <!-- CTA Button -->
-                    <button class="w-full bg-gradient-to-r from-orange-400 to-orange-600 text-white font-bold py-3 md:py-4 rounded-xl flex items-center justify-center gap-2 hover:shadow-lg transition-all hover:scale-105">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/>
-                        </svg>
-                        افزودن به سبد خرید
-                    </button>
+                    </form>
+
                 </div>
             </div>
 
         </div>
+    </section>
+    <!-- Work Process Section -->
+    <section class="bg-white py-16 md:py-20">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-20">
 
-    </div>
-</section>
+            <!-- Section Header -->
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-2xl md:text-4xl font-black text-gray-900 mb-4">
+                    فرآیند کاری <span class="text-blue-600">طراحی سایت ژاکت سرویس</span>
+                </h2>
+                <p class="text-gray-600 text-sm md:text-base max-w-3xl mx-auto leading-relaxed">
+                    مراحل دقیق و شفاف ارائه طراحی وب سایت، از سفارش تا
+                </p>
+                <p class="text-gray-600 text-sm md:text-base max-w-3xl mx-auto leading-relaxed">
+                    تحویل نهایی، با تمرکز بر کیفیت و رضایت شما
+                </p>
+            </div>
+
+            <!-- Process Steps Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10">
+
+                <!-- Step 1 - تحویل و پشتیبانی -->
+                <div class="text-center group">
+                    <!-- Icon Container -->
+                    <div class="relative inline-block mb-6">
+                        <div
+                            class="absolute inset-0 bg-orange-100 rounded-full blur-xl opacity-50 group-hover:opacity-75 transition-opacity">
+                        </div>
+                        <div
+                            class="relative bg-white w-24 h-24 md:w-28 md:h-28 rounded-full flex items-center justify-center shadow-lg group-hover:shadow-2xl transition-all border-4 border-orange-50">
+                            <svg class="w-12 h-12 md:w-14 md:h-14 text-orange-500" fill="currentColor"
+                                viewBox="0 0 20 20">
+                                <path
+                                    d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- Title -->
+                    <h3 class="text-xl md:text-2xl font-bold text-blue-600 mb-3">
+                        تحویل و پشتیبانی
+                    </h3>
+
+                    <!-- Description -->
+                    <p class="text-gray-600 text-xs md:text-sm leading-relaxed">
+                        پس از تایید نهایی، پروژه تحویل داده می‌شود و خدمات پشتیبانی برای اطمینان از رضایت کامل شما ارائه
+                        می‌شود
+                    </p>
+                </div>
+
+                <!-- Step 2 - اجرا و پیاده‌سازی -->
+                <div class="text-center group">
+                    <!-- Icon Container -->
+                    <div class="relative inline-block mb-6">
+                        <div
+                            class="absolute inset-0 bg-orange-100 rounded-full blur-xl opacity-50 group-hover:opacity-75 transition-opacity">
+                        </div>
+                        <div
+                            class="relative bg-white w-24 h-24 md:w-28 md:h-28 rounded-full flex items-center justify-center shadow-lg group-hover:shadow-2xl transition-all border-4 border-orange-50">
+                            <svg class="w-12 h-12 md:w-14 md:h-14 text-orange-500" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- Title -->
+                    <h3 class="text-xl md:text-2xl font-bold text-blue-600 mb-3">
+                        اجرا و پیاده‌سازی
+                    </h3>
+
+                    <!-- Description -->
+                    <p class="text-gray-600 text-xs md:text-sm leading-relaxed">
+                        برنامه‌نویسان متقابل با برنامه‌ریزی انجام و کدنویسی مورد‌نیاز ارائه می‌شود
+                    </p>
+                </div>
+
+                <!-- Step 3 - بررسی سفارش -->
+                <div class="text-center group">
+                    <!-- Icon Container -->
+                    <div class="relative inline-block mb-6">
+                        <div
+                            class="absolute inset-0 bg-orange-100 rounded-full blur-xl opacity-50 group-hover:opacity-75 transition-opacity">
+                        </div>
+                        <div
+                            class="relative bg-white w-24 h-24 md:w-28 md:h-28 rounded-full flex items-center justify-center shadow-lg group-hover:shadow-2xl transition-all border-4 border-orange-50">
+                            <svg class="w-12 h-12 md:w-14 md:h-14 text-orange-500" fill="currentColor"
+                                viewBox="0 0 20 20">
+                                <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z" />
+                                <path fill-rule="evenodd"
+                                    d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm9.707 5.707a1 1 0 00-1.414-1.414L9 12.586l-1.293-1.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- Title -->
+                    <h3 class="text-xl md:text-2xl font-bold text-blue-600 mb-3">
+                        بررسی سفارش
+                    </h3>
+
+                    <!-- Description -->
+                    <p class="text-gray-600 text-xs md:text-sm leading-relaxed">
+                        تیم ما در اسرع وقت بعد از ثبت سفارش با شما تماس برقرار و خواهند کرد
+                    </p>
+                </div>
+
+                <!-- Step 4 - ثبت درخواست -->
+                <div class="text-center group">
+                    <!-- Icon Container -->
+                    <div class="relative inline-block mb-6">
+                        <div
+                            class="absolute inset-0 bg-orange-100 rounded-full blur-xl opacity-50 group-hover:opacity-75 transition-opacity">
+                        </div>
+                        <div
+                            class="relative bg-white w-24 h-24 md:w-28 md:h-28 rounded-full flex items-center justify-center shadow-lg group-hover:shadow-2xl transition-all border-4 border-orange-50">
+                            <svg class="w-12 h-12 md:w-14 md:h-14 text-orange-500" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- Title -->
+                    <h3 class="text-xl md:text-2xl font-bold text-blue-600 mb-3">
+                        ثبت درخواست
+                    </h3>
+
+                    <!-- Description -->
+                    <p class="text-gray-600 text-xs md:text-sm leading-relaxed">
+                        ابتدا فرم طراحی وب سایت مدنظر خود را تهیه نمایید
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Process Flow Arrows (Desktop Only) -->
+            <div class="hidden lg:block relative mt-8">
+                <div class="absolute top-0 left-0 right-0 flex justify-between px-32">
+                    <!-- Arrow 1 -->
+                    <div class="flex-1 flex items-center justify-center">
+                        <svg class="w-16 h-8 text-orange-300 opacity-50" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                        </svg>
+                    </div>
+                    <!-- Arrow 2 -->
+                    <div class="flex-1 flex items-center justify-center">
+                        <svg class="w-16 h-8 text-orange-300 opacity-50" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                        </svg>
+                    </div>
+                    <!-- Arrow 3 -->
+                    <div class="flex-1 flex items-center justify-center">
+                        <svg class="w-16 h-8 text-orange-300 opacity-50" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Why Choose Us Section -->
+    <section class="bg-gray-50 py-16 md:py-20">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-20">
+
+            <!-- Section Header -->
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-2xl md:text-4xl font-black text-gray-900 mb-4">
+                    چرا <span class="text-blue-600">ژاکت سرویس</span>
+                </h2>
+                <p class="text-gray-600 text-sm md:text-base max-w-3xl mx-auto leading-relaxed">
+                    در این بخش با دلایل انتخاب ژاکت سرویس آشنا می‌شوید؛ از تجربه
+                </p>
+                <p class="text-gray-600 text-sm md:text-base max-w-3xl mx-auto leading-relaxed">
+                    تیم ما تا کیفیت خدماتی که ارائه می‌دهیم و مزایایی که ما را از دیگران
+                </p>
+                <p class="text-gray-600 text-sm md:text-base max-w-3xl mx-auto leading-relaxed">
+                    متمایز می‌کند.
+                </p>
+            </div>
+
+            <!-- Features Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+
+                <!-- Feature 1 - کیفیت تضمین شده -->
+                <div
+                    class="bg-white rounded-2xl p-6 md:p-8 text-center hover:shadow-xl transition-all duration-300 group">
+                    <!-- Icon -->
+                    <div class="relative inline-block mb-6">
+                        <div
+                            class="absolute inset-0 bg-blue-100 rounded-full blur-xl opacity-50 group-hover:opacity-75 transition-opacity">
+                        </div>
+                        <div
+                            class="relative bg-blue-50 w-20 h-20 md:w-24 md:h-24 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <svg class="w-10 h-10 md:w-12 md:h-12 text-blue-600" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- Divider -->
+                    <div class="w-12 h-1 bg-blue-600 mx-auto mb-4 rounded-full"></div>
+
+                    <!-- Title -->
+                    <h3 class="text-lg md:text-xl font-bold text-gray-900 mb-3">
+                        کیفیت تضمین شده
+                    </h3>
+
+                    <!-- Description -->
+                    <p class="text-gray-600 text-xs md:text-sm leading-relaxed">
+                        تضمین کیفیت بالا در تمام مراحل پروژه با استفاده از استانداردهای روز دنیا
+                    </p>
+                </div>
+
+                <!-- Feature 2 - پشتیبانی مستمر -->
+                <div
+                    class="bg-white rounded-2xl p-6 md:p-8 text-center hover:shadow-xl transition-all duration-300 group">
+                    <!-- Icon -->
+                    <div class="relative inline-block mb-6">
+                        <div
+                            class="absolute inset-0 bg-blue-100 rounded-full blur-xl opacity-50 group-hover:opacity-75 transition-opacity">
+                        </div>
+                        <div
+                            class="relative bg-blue-50 w-20 h-20 md:w-24 md:h-24 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <svg class="w-10 h-10 md:w-12 md:h-12 text-blue-600" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- Divider -->
+                    <div class="w-12 h-1 bg-blue-600 mx-auto mb-4 rounded-full"></div>
+
+                    <!-- Title -->
+                    <h3 class="text-lg md:text-xl font-bold text-gray-900 mb-3">
+                        پشتیبانی مستمر
+                    </h3>
+
+                    <!-- Description -->
+                    <p class="text-gray-600 text-xs md:text-sm leading-relaxed">
+                        پشتیبانی ۲۴ ساعته و ۷ روز هفته برای رفع هرگونه مشکل و پاسخگویی به سوالات شما
+                    </p>
+                </div>
+
+                <!-- Feature 3 - تنوع خدمات -->
+                <div
+                    class="bg-white rounded-2xl p-6 md:p-8 text-center hover:shadow-xl transition-all duration-300 group">
+                    <!-- Icon -->
+                    <div class="relative inline-block mb-6">
+                        <div
+                            class="absolute inset-0 bg-blue-100 rounded-full blur-xl opacity-50 group-hover:opacity-75 transition-opacity">
+                        </div>
+                        <div
+                            class="relative bg-blue-50 w-20 h-20 md:w-24 md:h-24 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <svg class="w-10 h-10 md:w-12 md:h-12 text-blue-600" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- Divider -->
+                    <div class="w-12 h-1 bg-blue-600 mx-auto mb-4 rounded-full"></div>
+
+                    <!-- Title -->
+                    <h3 class="text-lg md:text-xl font-bold text-gray-900 mb-3">
+                        تنوع خدمات
+                    </h3>
+
+                    <!-- Description -->
+                    <p class="text-gray-600 text-xs md:text-sm leading-relaxed">
+                        ارائه طیف وسیعی از خدمات طراحی وب از فروشگاهی تا شرکتی و آموزشی
+                    </p>
+                </div>
+
+                <!-- Feature 4 - تخصص و تجربه -->
+                <div
+                    class="bg-white rounded-2xl p-6 md:p-8 text-center hover:shadow-xl transition-all duration-300 group">
+                    <!-- Icon -->
+                    <div class="relative inline-block mb-6">
+                        <div
+                            class="absolute inset-0 bg-blue-100 rounded-full blur-xl opacity-50 group-hover:opacity-75 transition-opacity">
+                        </div>
+                        <div
+                            class="relative bg-blue-50 w-20 h-20 md:w-24 md:h-24 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <svg class="w-10 h-10 md:w-12 md:h-12 text-blue-600" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- Divider -->
+                    <div class="w-12 h-1 bg-blue-600 mx-auto mb-4 rounded-full"></div>
+
+                    <!-- Title -->
+                    <h3 class="text-lg md:text-xl font-bold text-gray-900 mb-3">
+                        تخصص و تجربه
+                    </h3>
+
+                    <!-- Description -->
+                    <p class="text-gray-600 text-xs md:text-sm leading-relaxed">
+                        تیم متخصص با سال‌ها تجربه در طراحی و توسعه وب‌سایت‌های حرفه‌ای
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Additional Info Box -->
+            <div class="mt-12 md:mt-16 bg-gradient-to-r from-blue-600 to-blue-700 rounded-2xl p-8 md:p-10 text-center">
+                <h3 class="text-2xl md:text-3xl font-bold text-white mb-4">
+                    آماده شروع پروژه خود هستید؟
+                </h3>
+                <p class="text-blue-100 text-sm md:text-base mb-6 max-w-2xl mx-auto">
+                    با ما تماس بگیرید و از مشاوره رایگان بهره‌مند شوید
+                </p>
+                <button
+                    class="bg-white text-blue-600 px-8 py-4 rounded-xl font-bold text-base hover:shadow-2xl transition-all hover:scale-105 inline-flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                    </svg>
+                    تماس با ما
+                </button>
+            </div>
+
+        </div>
+    </section>
 
     <script>
         const header = document.getElementById('mainHeader');
@@ -823,6 +1187,27 @@
             overlay.classList.add('hidden');
             document.body.style.overflow = 'auto';
         }
+        document.getElementById('customRequestForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Get form data
+            const formData = new FormData(this);
+            const data = {
+                name: formData.get('name'),
+                need: formData.get('need'),
+                description: formData.get('description'),
+                phone: formData.get('phone')
+            };
+
+            // Show success message
+            alert('درخواست شما با موفقیت ثبت شد! به زودی با شما تماس خواهیم گرفت.');
+
+            // Reset form
+            this.reset();
+
+            // Here you would typically send data to your backend
+            console.log('Form submitted:', data);
+        });
     </script>
 </body>
 
